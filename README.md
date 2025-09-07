@@ -21,6 +21,6 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 You can view the live website here:
 
-🔗 https://sheema-md.github.io/
+🔗https://sheema-md.github.io/Sheema_Portfolio/
 
 ---
