@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Sheema_Portfolio/static/css/main.a6b74075.css",
-    "main.js": "/Sheema_Portfolio/static/js/main.86abbf4d.js",
+    "main.js": "/Sheema_Portfolio/static/js/main.371e33b3.js",
     "index.html": "/Sheema_Portfolio/index.html",
     "main.a6b74075.css.map": "/Sheema_Portfolio/static/css/main.a6b74075.css.map",
-    "main.86abbf4d.js.map": "/Sheema_Portfolio/static/js/main.86abbf4d.js.map"
+    "main.371e33b3.js.map": "/Sheema_Portfolio/static/js/main.371e33b3.js.map"
   },
   "entrypoints": [
     "static/css/main.a6b74075.css",
-    "static/js/main.86abbf4d.js"
+    "static/js/main.371e33b3.js"
   ]
 }
