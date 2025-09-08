@@ -10,14 +10,15 @@ export function Navigation() {
   const indicatorRef = useRef(null);
   const resizeObserverRef = useRef(null);
 
-  const navItems = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "skills", label: "Skills" },
-    { id: "projects", label: "Projects" },
-    { id: "achievements", label: "Achievements" },
-    { id: "contact", label: "Contact" },
-  ];
+  const navItems = React.useMemo(() => [
+  { id: "home", label: "Home" },
+  { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
+  { id: "projects", label: "Projects" },
+  { id: "achievements", label: "Achievements" },
+  { id: "contact", label: "Contact" },
+], []);
+
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -52,30 +53,30 @@ export function Navigation() {
   };
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((e) => e.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
-        if (visible.length) {
-          setActiveSection(visible[0].target.id);
-        }
-      },
-      {
-        root: null,
-        rootMargin: "-40% 0px -40% 0px",
-        threshold: 0,
+      if (visible.length) {
+        setActiveSection(visible[0].target.id);
       }
-    );
+    },
+    {
+      root: null,
+      rootMargin: "-40% 0px -40% 0px",
+      threshold: 0,
+    }
+  );
 
-    navItems.forEach((item) => {
-      const el = document.getElementById(item.id);
-      if (el) observer.observe(el);
-    });
+  navItems.forEach((item) => {
+    const el = document.getElementById(item.id);
+    if (el) observer.observe(el);
+  });
 
-    return () => observer.disconnect();
-  }, []);
+  return () => observer.disconnect();
+}, [navItems]); // Safe because navItems is memoized
 
   useEffect(() => {
     updateIndicator(activeSection);

@@ -3,7 +3,6 @@ import { Card } from "./ui/card";
 import { 
   Trophy, 
   Users, 
-  Code, 
   Mic,
   Award,
   Target
