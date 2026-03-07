@@ -10,7 +10,14 @@ import {
 
 export function AchievementsSection() {
   const achievements = [
+    
     {
+       title: "GDGOC Competitive Programming Lead",
+      description: "Contibuted to team , organised Hackathons",
+      icon: Trophy,
+      color: "text-yellow-500",
+      bgColor: "bg-yellow-500/10"
+    },{
       title: "Hackathon Participation",
       description: "Participated in multiple hackathons including HacktoberFest and local coding competitions",
       icon: Trophy,

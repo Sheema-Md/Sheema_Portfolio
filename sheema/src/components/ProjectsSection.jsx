@@ -6,6 +6,22 @@ import { ExternalLink, Github } from "lucide-react";
 export function ProjectsSection() {
   const projects = [
     {
+  title: "Multi-Source Sentiment Analysis System",
+  description: "A full-stack NLP application that analyzes sentiment from multiple sources using six algorithms (VADER, TextBlob, Logistic Regression, Naive Bayes, Random Forest, and Ensemble Voting) with a consensus-based approach for improved accuracy.",
+  technologies: ["Python", "Flask", "React", "Scikit-learn", "NLTK", "TextBlob", "Pandas", "TF-IDF", "News API"],
+  githubUrl: "https://github.com/Sheema-Md/Multi-Source-Sentimental-Analyzer.git",
+  liveUrl: "https://multi-source-sentimental-analyzer.onrender.com/",
+  gradient: "from-blue-500 to-indigo-600"
+}
+,
+{
+  title: "Parkinsons-Prediction",
+  description: "An AI-powered web application that predicts the risk of Parkinson’s disease using multiple machine learning models. The system analyzes patient symptoms such as age, gender, tremor, rigidity, and bradykinesia to generate predictions. It also visualizes model performance using interactive charts for accuracy and F1-score comparison.",
+  technologies: ["Python", "Flask", "Scikit-learn", "NumPy", "Joblib", "HTML", "CSS", "JavaScript", "Chart.js"],
+  githubUrl: "https://github.com/Sheema-Md/Parkinsons-Prediction.git",
+  gradient: "from-blue-500 to-indigo-600"
+}
+,   {
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features smooth animations, dark mode toggle, and optimized performance.",
       technologies: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
