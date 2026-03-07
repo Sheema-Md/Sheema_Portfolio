@@ -16,7 +16,7 @@ export function ProjectsSection() {
 ,
 {
   title: "Parkinsons-Prediction",
-  description: "An AI-powered web application that predicts the risk of Parkinson’s disease using multiple machine learning models. The system analyzes patient symptoms such as age, gender, tremor, rigidity, and bradykinesia to generate predictions. It also visualizes model performance using interactive charts for accuracy and F1-score comparison.",
+  description: "AI-powered web application that predicts the risk of Parkinson’s disease using multiple machine learning models. The system analyzes patient symptoms such as age, gender, tremor, rigidity, and bradykinesia to generate predictions. It also visualizes model performance using interactive charts for accuracy and F1-score comparison.",
   technologies: ["Python", "Flask", "Scikit-learn", "NumPy", "Joblib", "HTML", "CSS", "JavaScript", "Chart.js"],
   githubUrl: "https://github.com/Sheema-Md/Parkinsons-Prediction.git",
   gradient: "from-blue-500 to-indigo-600"
