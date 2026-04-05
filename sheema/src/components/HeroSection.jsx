@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export function HeroSection() {
   const handleResumeDownload = () => {
     // This would link to your actual resume PDF
-    window.open("/resume.pdf", "_blank");
+    window.open("/resumefinal.pdf", "_blank");
   };
 
   return (
